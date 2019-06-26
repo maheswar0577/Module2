@@ -61,7 +61,7 @@ clean package deploy -DmuleDeploy-->
 						<username>m-reddy-c</username> 
 						<password>M#Kmr@1990</password> 
 						<applicationName>module2</applicationName>
-						<environment>QA</environment>
+						<environment>Design</environment>
 						<target>tamkeen-prod-rtf</target>
 						<server>ExchangeRepository</server>
 						<provider>MC</provider>
@@ -75,7 +75,6 @@ clean package deploy -DmuleDeploy-->
 						</deploymentSettings>
 					</runtimeFabricDeployment>
 				</configuration>
-
 			</plugin>
 			
 			<plugin>
