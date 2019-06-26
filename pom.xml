@@ -29,6 +29,24 @@
 				<configuration>
 				</configuration>
 			</plugin>
+			<!-- Cloud hub plugin 
+			<plugin> 
+				<groupId>org.mule.tools.maven</groupId> 
+				<artifactId>mule-maven-plugin</artifactId> 
+				<version>${mule.maven.plugin.version}</version> 
+				<extensions>true</extensions> 
+				<configuration> 
+					<cloudHubDeployment> 
+						<uri>https://anypoint.mulesoft.com</uri> 
+						<muleVersion>${app.runtime}</muleVersion> 
+						<username>m-reddy-c</username> 
+						<password>M#Kmr@1990</password> 
+						<applicationName>module2</applicationName> 
+						<environment>Sandbox</environment>
+						<properties> <key>value</key> </properties> 
+					</cloudHubDeployment>
+				</configuration> 
+			</plugin> -->
 
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
@@ -36,19 +54,26 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
+					<runtimeFabricDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
-						<username>m-reddy-c</username>
-						<password>M#Kmr@1990</password>
+						<username>m-reddy-c</username> 
+						<password>M#Kmr@1990</password> 
 						<applicationName>module2</applicationName>
-						<environment>Sandbox</environment>
+						<environment>QA</environment>
+						<provider>MC</provider>
 						<properties>
 							<key>value</key>
 						</properties>
-					</cloudHubDeployment>
+						<deploymentSettings>
+							<cpuReserved>500m</cpuReserved>
+							<memoryReserved>800Mi</memoryReserved>
+						</deploymentSettings>
+					</runtimeFabricDeployment>
 				</configuration>
+
 			</plugin>
+
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
 				<artifactId>munit-maven-plugin</artifactId>
