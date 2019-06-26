@@ -29,7 +29,7 @@
 				<configuration>
 				</configuration>
 			</plugin>
-			<!-- Cloud hub plugin 
+			 
 			<plugin> 
 				<groupId>org.mule.tools.maven</groupId> 
 				<artifactId>mule-maven-plugin</artifactId> 
@@ -46,8 +46,8 @@
 						<properties> <key>value</key> </properties> 
 					</cloudHubDeployment>
 				</configuration> 
-			</plugin> -->
-
+			</plugin> 
+<!-- Cloud hub plugin
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
@@ -76,7 +76,7 @@
 				</configuration>
 
 			</plugin>
-
+-->
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
 				<artifactId>munit-maven-plugin</artifactId>
