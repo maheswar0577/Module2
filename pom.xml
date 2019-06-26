@@ -61,11 +61,14 @@
 						<password>M#Kmr@1990</password> 
 						<applicationName>module2</applicationName>
 						<environment>QA</environment>
+						<target>tamkeen-prod-rtf</target>
+						<server>ExchangeRepository</server>
 						<provider>MC</provider>
 						<properties>
 							<key>value</key>
 						</properties>
 						<deploymentSettings>
+							<replicationfactor>1</replicationfactor>
 							<cpuReserved>500m</cpuReserved>
 							<memoryReserved>800Mi</memoryReserved>
 						</deploymentSettings>
