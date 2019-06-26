@@ -102,7 +102,17 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	
+	
+ 	<distributionManagement>
+		<repository>
+			<id>ExchangeRepository</id>
+			<name>Corporate Repository</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/6714a3c2-b455-46fa-a8ea-47865fb047e7/maven</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
